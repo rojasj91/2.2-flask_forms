@@ -112,4 +112,21 @@ img {
     }
 }
 
+@media (min-width: 768px) {
+    .col-md-8 {
+        padding: 0;
+        flex: 0 0 65%;
+        height: 210px;
+        max-width: 64.9%;
+        background: white;
+        margin: -210px 10px 0 0;
+        border: 5px solid white;
+        background: url(/static/images/sk8er-1.png);
+        color: white;
+        text-transform: uppercase;
+        font-size: 48px;
+        font-weight: bolder;
+        text-align: -webkit-center;
+    }
+}
 
