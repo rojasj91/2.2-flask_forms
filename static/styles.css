@@ -1,0 +1,115 @@
+
+
+body {
+    background: url(/static/images/bg.jpg);
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+body::before {
+    background: url(/static/images/grid.png);
+}
+/*Top navigation buttons; box-shadow placed shadow on the nav buttons*/
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #FFF0EE;
+    background-color: #C50015;
+    margin: 10px;
+    box-shadow: 5px 5px 2px 1px rgba(242, 242, 244, 0.8);
+    text-transform: uppercase;
+}
+
+.top-image {
+    position: relative;
+    margin: 0;
+    padding: 50px 0;
+    height: 60vh;
+    background: url(/static/images/top-image.png) no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.top-image::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 5px solid white;
+}
+
+img {
+    position: absolute;
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        padding: 40px;
+        flex: 0 0 32%;
+        max-width: 32%;
+        background: white;
+        margin: 80px 10px 0 0;
+        border: 1px solid white;
+    }
+}
+
+@media (min-width: 768px) {
+    .sk8er-1{
+        flex: 0 0 32%;
+        max-width: 32%;
+        height: 243px;
+        background: white;
+        margin: 40px 10px 0 0;
+        border: 5px solid white;
+        padding: 0;
+        background: url(/static/images/sk8er-4.png);
+        color: white;
+        text-transform: uppercase;
+        font-size: 48px;
+        font-weight: bolder;
+        text-align: -webkit-center;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .sk8er-2{
+        flex: 0 0 32%;
+        max-width: 32%;
+        height: 243px;
+        background: white;
+        margin: 40px 10px 0 0;
+        border: 5px solid white;
+        padding: 0;
+        background: url(/static/images/sk8er-3.png);
+        color: white;
+        text-transform: uppercase;
+        font-size: 48px;
+        font-weight: bolder;
+        text-align: -webkit-center;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .sk8er-3{
+        flex: 0 0 32%;
+        max-width: 32%;
+        height: 464px;
+        background: white;
+        margin: 40px 10px 0 0;
+        border: 5px solid white;
+        padding: 0;
+        background: url(/static/images/sk8er-2.png);
+        color: white;
+        text-transform: uppercase;
+        font-size: 48px;
+        font-weight: bolder;
+        text-align: -webkit-center;
+
+    }
+}
+
+

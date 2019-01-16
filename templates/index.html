@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Travel the universe.</h1>
+            <p class="lead">Book your tickets now!</p>
+        </div>
+
+        <!-- Form tags have an action and method -->
+        <form action="/book-now/" method="post">
+            <ul class="list-group">
+                <!-- Templates can have for loops to help us keep all our html in the html file -->
+                {% for planet in planet_list %}
+                    <li class="list-group-item">
+                        <div class="form-group row">
+
+                            <label for="{{ loop.index }}-tickets" class="col-sm-4 col-form-label">
+                                {{ planet.name }} :: {{ planet.climate }}
+                            </label>
+
+                            <div class="col-sm-8">
+                                <!-- Inputs have a name that is used as the dictionary key on our python server -->
+                                <input type="text" name="{{ loop.index }}-tickets" placeholder="0" />
+                            </div>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <!-- a type of submit tells this button to submit the form when clicked -->
+            <button type="submit" class="btn btn-primary">Book the Trip</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
