@@ -40,7 +40,7 @@ body::before {
     border: 5px solid white;
 }
 
-img {
+img .logo{
     position: absolute;
 }
 
@@ -141,4 +141,45 @@ img {
     background: white;
     margin-top: 20px;
 }
+}
+
+.skateboards li{
+    display: inline-block;
+    width: 100px;
+}
+
+.footer{
+    background: white;
+    margin-top: 20px;
+    max-width: 97.7%;
+}
+
+.col-md-6{
+    display: inline-block;
+    padding: 20px;
+}
+
+.input-group{
+    float: right;
+}
+
+.input-group>.form-control, .input-group>.form-control-plaintext {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.input-group-append, .input-group-prepend {
+    display: -ms-flexbox;
+    display: block;
+}
+
+a{
+    color: #FFF0EE;
+    background-color: #C50015;
+    margin: 10px;
+    box-shadow: 5px 5px 2px 1px rgba(242, 242, 244, 0.8);
+    text-transform: uppercase;
 }
